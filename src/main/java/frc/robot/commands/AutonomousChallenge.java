@@ -18,11 +18,11 @@ public class AutonomousChallenge extends SequentialCommandGroup {
   public AutonomousChallenge(Drivetrain drivetrain) {
     System.out.println("Stability balls rule!!");
     addCommands(
-        new DriveDistanceCorrected(-1, 251.81, drivetrain),
-        new TurnGyro(1, 87, drivetrain),
-        new DriveDistanceCorrected(-1, 62.99, drivetrain),
-        new TurnGyro(1, 87, drivetrain),
-        new DriveDistanceCorrected(-1, 251.81, drivetrain));
+        new DriveDistanceCorrected(1, 251.81, drivetrain),
+        new TurnDegrees(1, 87, drivetrain),
+        new DriveDistanceCorrected(1, 69, drivetrain),
+        new TurnDegrees(1, 87, drivetrain),
+        new DriveDistanceCorrected(1, 269, drivetrain));
 
         // old commands
         // new DriveDistance(-0.5, 10, drivetrain),
