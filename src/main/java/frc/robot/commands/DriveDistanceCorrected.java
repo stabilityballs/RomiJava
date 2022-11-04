@@ -11,7 +11,7 @@ public class DriveDistanceCorrected extends CommandBase {
   private final Drivetrain m_drive;
   private final double m_speed;
   private final double m_distance;
-  private double pVal = 1.0;
+  private double pVal = 0.088;
 
   /**
    * Creates a new DriveDistanceCorrected. This command will drive your your robot for a desired distance at
